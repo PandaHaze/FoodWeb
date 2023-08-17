@@ -58,7 +58,6 @@ export default {
     }),
   },
   methods: {
-    // Redirigir al usuario a la ruta "Comidas.vue"
     buyAllProducts() {
       this.$router.push('/Comidas'); 
     },

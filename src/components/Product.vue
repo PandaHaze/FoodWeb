@@ -63,18 +63,18 @@
           <v-card-title>{{ product.title }}</v-card-title>
           <v-card-title class="grey--text text-grey-darken-1 caption mt-n6 mt-9">{{ product.subtitle }}</v-card-title>
           <v-card-title class="mt-n4">{{ product.price }}</v-card-title>
-          <v-card-actions class="mw-2 mt-n4 ml-5">
-  <!-- Minus button -->
+          <v-card-actions class="mw-2 mt-n4 ml-5 d-flex justify-center">
+  <!-- Boton Menos -->
   <v-btn class="mt-n2 add" @click="decrement(product)">
     <v-icon color="green">mdi-minus</v-icon>
   </v-btn>
   <strong class="mx-2" v-text="product.quantity"></strong>
-  <!-- Plus button -->
+  <!-- Boton Plus -->
   <v-btn class="mt-n2 add" @click="increment(product)">
     <v-icon color="green">mdi-plus</v-icon>
   </v-btn>
   <v-spacer></v-spacer>
-  <!-- Favorite button -->
+  <!-- Boton Favorito -->
   <v-btn @click="toggleFavorite(product)" :class="{ 'favorited': isFavorite(product) }" class="mx-2 mt-n3" dab color="#E2F2E5">
     <span class="material-symbols-outlined color1" x-small>
       {{ isFavorite(product) ? 'shopping_cart ' : ' shopping_cart ' }}
